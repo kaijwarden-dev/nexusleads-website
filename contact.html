@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Nexus Leads — UK Business Data Services</title>
+    <meta name="description" content="Get in touch with Nexus Leads. Request verified UK business leads, SEO audits, or competitive intelligence reports. We respond within 24 hours.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://nexusleads.uk/contact">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%233b82f6%22/><text x=%2250%22 y=%2270%22 font-size=%2260%22 font-weight=%22bold%22 font-family=%22Arial%22 text-anchor=%22middle%22 fill=%22white%22>N</text></svg>">
+
+    <meta property="og:title" content="Contact Nexus Leads — UK Business Data Services">
+    <meta property="og:description" content="Request verified UK business leads, SEO audits, or competitive intelligence reports.">
+    <meta property="og:url" content="https://nexusleads.uk/contact">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'] },
+                    colors: {
+                        navy: { DEFAULT: '#0f172a', light: '#1e293b', lighter: '#334155' },
+                        electric: '#3b82f6',
+                        teal: '#06b6d4',
+                        purple: '#8b5cf6',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-strong {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 50%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .text-gradient-blue {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .form-input {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 14px 18px;
+            color: white;
+            font-size: 14px;
+            width: 100%;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            outline: none;
+        }
+        .form-input:focus {
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+        .form-input::placeholder {
+            color: rgba(148, 163, 184, 0.5);
+        }
+        select.form-input {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2394a3b8' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            padding-right: 40px;
+        }
+        select.form-input option {
+            background: #1e293b;
+            color: white;
+        }
+        textarea.form-input {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .hero-aurora {
+            background:
+                radial-gradient(ellipse 80% 60% at 20% 40%, rgba(59,130,246,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 50% at 80% 20%, rgba(6,182,212,0.1) 0%, transparent 60%),
+                radial-gradient(ellipse 70% 60% at 60% 80%, rgba(139,92,246,0.08) 0%, transparent 60%);
+        }
+
+        .grid-pattern {
+            background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2260%22 height=%2260%22><rect width=%2260%22 height=%2260%22 fill=%22none%22 stroke=%22white%22 stroke-width=%220.5%22/></svg>');
+            opacity: 0.02;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.8); }
+        }
+        .pulse-dot { animation: pulse-dot 2s ease-in-out infinite; }
+
+        .success-message { display: none; }
+        .form-container.submitted .success-message { display: block; }
+        .form-container.submitted form { display: none; }
+    </style>
+</head>
+<body class="bg-navy font-sans text-white antialiased">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50" style="background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255,255,255,0.06);">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+            <a href="/" class="text-xl font-extrabold tracking-tight">
+                Nexus<span class="text-gradient-blue">Leads</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="/#services" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Services</a>
+                <a href="/#lead-generation" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Leads</a>
+                <a href="/#seo-audits" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">SEO</a>
+                <a href="/#competitive-intel" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Intel</a>
+                <a href="/#faq" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">FAQ</a>
+            </div>
+            <a href="/contact" class="hidden md:inline-flex items-center gap-2 bg-electric hover:bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all hover:-translate-y-0.5">
+                Contact Us
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero-aurora relative pt-32 pb-16 overflow-hidden">
+    <div class="absolute inset-0 grid-pattern"></div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-12">
+            <div class="inline-flex items-center gap-2.5 glass rounded-full px-5 py-2 mb-6">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full pulse-dot"></span>
+                <span class="text-sm font-medium text-slate-300">We respond within 24 hours</span>
+            </div>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-4">
+                Get in <span class="text-gradient">Touch</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-xl mx-auto">Tell us what you need and we'll get back to you with a quote. No sales calls, no pressure.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form -->
+<section class="pb-24 lg:pb-32 -mt-4">
+    <div class="max-w-3xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="form-container glass-strong rounded-3xl p-8 sm:p-10 lg:p-12" id="formContainer">
+
+            <!-- Success Message -->
+            <div class="success-message text-center py-12">
+                <div class="w-20 h-20 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-emerald-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                </div>
+                <h2 class="text-2xl font-bold mb-3">Message Sent</h2>
+                <p class="text-slate-400 mb-8">Thanks for getting in touch. We'll get back to you within 24 hours with a quote or any details you need.</p>
+                <a href="/" class="inline-flex items-center gap-2 glass hover:bg-white/10 text-white font-semibold px-6 py-3 rounded-xl transition-all">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+                    Back to Home
+                </a>
+            </div>
+
+            <!-- Form -->
+            <form action="https://formsubmit.co/hello@nexusleads.uk" method="POST" id="contactForm">
+                <!-- Formsubmit config -->
+                <input type="hidden" name="_subject" value="New enquiry from nexusleads.uk">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://nexusleads.uk/contact?sent=true">
+                <input type="text" name="_honey" style="display:none">
+
+                <div class="space-y-6">
+                    <!-- Name + Email row -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Your Name *</label>
+                            <input type="text" name="name" required placeholder="John Smith" class="form-input">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Email Address *</label>
+                            <input type="email" name="email" required placeholder="john@company.co.uk" class="form-input">
+                        </div>
+                    </div>
+
+                    <!-- Company + Phone row -->
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Company</label>
+                            <input type="text" name="company" placeholder="Your Company Ltd" class="form-input">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Phone (optional)</label>
+                            <input type="tel" name="phone" placeholder="07xxx xxx xxx" class="form-input">
+                        </div>
+                    </div>
+
+                    <!-- Service dropdown -->
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">What are you interested in? *</label>
+                        <select name="service" required class="form-input" id="serviceSelect">
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="Lead Generation - Starter (50 leads, £50)">Lead Generation — Starter (50 leads, £50)</option>
+                            <option value="Lead Generation - Growth (200 leads, £150)">Lead Generation — Growth (200 leads, £150)</option>
+                            <option value="Lead Generation - Scale (500 leads, £350)">Lead Generation — Scale (500 leads, £350)</option>
+                            <option value="SEO Audit - Quick Check (5 pages, £50)">SEO Audit — Quick Check (5 pages, £50)</option>
+                            <option value="SEO Audit - Full Audit (25 pages, £150)">SEO Audit — Full Audit (25 pages, £150)</option>
+                            <option value="SEO Audit - Audit + Competitor (50 pages, £350)">SEO Audit — Audit + Competitor (50 pages, £350)</option>
+                            <option value="Competitive Intelligence - Snapshot (3 competitors, £150)">Competitive Intelligence — Snapshot (3 competitors, £150)</option>
+                            <option value="Competitive Intelligence - Full Analysis (5 competitors, £350)">Competitive Intelligence — Full Analysis (5 competitors, £350)</option>
+                            <option value="Competitive Intelligence - Strategic (8 competitors, £600)">Competitive Intelligence — Strategic (8 competitors, £600)</option>
+                            <option value="Custom / Multiple Services">Custom / Multiple Services</option>
+                            <option value="Just a question">Just a question</option>
+                        </select>
+                    </div>
+
+                    <!-- Conditional fields based on service -->
+                    <div id="leadFields" style="display:none">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Target Niche / Industry</label>
+                                <input type="text" name="niche" placeholder="e.g. Fashion, Trades, Hospitality" class="form-input">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Target Location</label>
+                                <input type="text" name="location" placeholder="e.g. London, Manchester, Nationwide" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="seoFields" style="display:none">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Website URL to Audit</label>
+                            <input type="url" name="website_url" placeholder="https://yourwebsite.co.uk" class="form-input">
+                        </div>
+                    </div>
+
+                    <div id="ciFields" style="display:none">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Your Business / Website</label>
+                                <input type="text" name="your_business" placeholder="Your business name or URL" class="form-input">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Known Competitors (if any)</label>
+                                <input type="text" name="competitors" placeholder="competitor1.co.uk, competitor2.co.uk" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">Anything else we should know?</label>
+                        <textarea name="message" placeholder="Tell us about your project, any specific requirements, or questions you have..." class="form-input"></textarea>
+                    </div>
+
+                    <!-- Submit -->
+                    <button type="submit" id="submitBtn" class="w-full bg-electric hover:bg-blue-500 text-white font-semibold py-4 rounded-xl transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_40px_rgba(59,130,246,0.4)] text-base flex items-center justify-center gap-2">
+                        Send Enquiry
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                    </button>
+
+                    <p class="text-xs text-slate-500 text-center mt-4">We'll respond within 24 hours. No spam, no sales calls.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-white/[0.06] py-12">
+    <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-8">
+                <a href="/" class="text-xl font-extrabold">Nexus<span class="text-gradient-blue">Leads</span></a>
+                <span class="text-xs text-slate-500">Data-Driven Growth for UK Businesses</span>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-sm">
+                <a href="/#services" class="text-slate-500 hover:text-slate-300 transition-colors">Services</a>
+                <a href="/#lead-generation" class="text-slate-500 hover:text-slate-300 transition-colors">Leads</a>
+                <a href="/#seo-audits" class="text-slate-500 hover:text-slate-300 transition-colors">SEO</a>
+                <a href="/#competitive-intel" class="text-slate-500 hover:text-slate-300 transition-colors">Intel</a>
+                <a href="/#faq" class="text-slate-500 hover:text-slate-300 transition-colors">FAQ</a>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-white/[0.04] text-center">
+            <p class="text-xs text-slate-600">&copy; 2026 Nexus Leads. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Show/hide conditional fields based on service selection
+    const serviceSelect = document.getElementById('serviceSelect');
+    const leadFields = document.getElementById('leadFields');
+    const seoFields = document.getElementById('seoFields');
+    const ciFields = document.getElementById('ciFields');
+
+    serviceSelect.addEventListener('change', function() {
+        const val = this.value.toLowerCase();
+        leadFields.style.display = val.includes('lead generation') ? 'block' : 'none';
+        seoFields.style.display = val.includes('seo audit') ? 'block' : 'none';
+        ciFields.style.display = val.includes('competitive intelligence') ? 'block' : 'none';
+
+        if (val.includes('custom') || val.includes('question')) {
+            leadFields.style.display = 'none';
+            seoFields.style.display = 'none';
+            ciFields.style.display = 'none';
+        }
+    });
+
+    // Check if redirected back after submission
+    if (window.location.search.includes('sent=true')) {
+        document.getElementById('formContainer').classList.add('submitted');
+    }
+
+    // Auto-select service from URL param
+    const params = new URLSearchParams(window.location.search);
+    const serviceParam = params.get('service');
+    if (serviceParam) {
+        const map = {
+            'leads-starter': 'Lead Generation - Starter (50 leads, £50)',
+            'leads-growth': 'Lead Generation - Growth (200 leads, £150)',
+            'leads-scale': 'Lead Generation - Scale (500 leads, £350)',
+            'seo-quick': 'SEO Audit - Quick Check (5 pages, £50)',
+            'seo-full': 'SEO Audit - Full Audit (25 pages, £150)',
+            'seo-competitor': 'SEO Audit - Audit + Competitor (50 pages, £350)',
+            'ci-snapshot': 'Competitive Intelligence - Snapshot (3 competitors, £150)',
+            'ci-full': 'Competitive Intelligence - Full Analysis (5 competitors, £350)',
+            'ci-strategic': 'Competitive Intelligence - Strategic (8 competitors, £600)',
+        };
+        const val = map[serviceParam];
+        if (val) {
+            serviceSelect.value = val;
+            serviceSelect.dispatchEvent(new Event('change'));
+        }
+    }
+</script>
+
+</body>
+</html>
