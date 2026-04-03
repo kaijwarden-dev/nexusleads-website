@@ -208,6 +208,9 @@
                         <label class="block text-sm font-medium text-slate-300 mb-2">What are you interested in? *</label>
                         <select name="service" required class="form-input" id="serviceSelect">
                             <option value="" disabled selected>Select a service</option>
+                            <option value="Lead Generation - Free Sample">Lead Generation &#8212; Free Sample</option>
+                            <option value="SEO Audit - Free Scan">SEO Audit &#8212; Free Quick Scan</option>
+                            <option value="Competitive Intelligence - Free Snapshot">CI &#8212; Free Snapshot</option>
                             <option value="Lead Generation">Lead Generation</option>
                             <option value="SEO Audit">SEO Audit</option>
                             <option value="Competitive Intelligence">Competitive Intelligence</option>
@@ -301,8 +304,8 @@
     serviceSelect.addEventListener('change', function() {
         const val = this.value.toLowerCase();
         leadFields.style.display = val.includes('lead generation') ? 'block' : 'none';
-        seoFields.style.display = val.includes('seo audit') ? 'block' : 'none';
-        ciFields.style.display = val.includes('competitive intelligence') ? 'block' : 'none';
+        seoFields.style.display = (val.includes('seo audit') || val.includes('seo audit - free')) ? 'block' : 'none';
+        ciFields.style.display = (val.includes('competitive intelligence') || val.includes('ci -')) ? 'block' : 'none';
     });
 
     // Handle form submission via Google Apps Script
@@ -344,14 +347,17 @@
     if (serviceParam) {
         const map = {
             'leads': 'Lead Generation',
+            'leads-free': 'Lead Generation - Free Sample',
             'leads-starter': 'Lead Generation',
             'leads-growth': 'Lead Generation',
             'leads-scale': 'Lead Generation',
             'seo': 'SEO Audit',
+            'seo-free': 'SEO Audit - Free Scan',
             'seo-quick': 'SEO Audit',
             'seo-full': 'SEO Audit',
             'seo-competitor': 'SEO Audit',
             'ci': 'Competitive Intelligence',
+            'ci-free': 'Competitive Intelligence - Free Snapshot',
             'ci-snapshot': 'Competitive Intelligence',
             'ci-full': 'Competitive Intelligence',
             'ci-strategic': 'Competitive Intelligence',
