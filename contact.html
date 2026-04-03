@@ -131,6 +131,7 @@
                 <a href="/#seo-audits" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">SEO</a>
                 <a href="/#competitive-intel" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Intel</a>
                 <a href="/#faq" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">FAQ</a>
+                <a href="/contact" class="text-sm font-medium text-white transition-colors">Contact</a>
             </div>
             <a href="/contact" class="hidden md:inline-flex items-center gap-2 bg-electric hover:bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-xl transition-all hover:-translate-y-0.5">
                 Contact Us
@@ -207,15 +208,9 @@
                         <label class="block text-sm font-medium text-slate-300 mb-2">What are you interested in? *</label>
                         <select name="service" required class="form-input" id="serviceSelect">
                             <option value="" disabled selected>Select a service</option>
-                            <option value="Lead Generation - Starter (50 leads, £50)">Lead Generation — Starter (50 leads, £50)</option>
-                            <option value="Lead Generation - Growth (200 leads, £150)">Lead Generation — Growth (200 leads, £150)</option>
-                            <option value="Lead Generation - Scale (500 leads, £350)">Lead Generation — Scale (500 leads, £350)</option>
-                            <option value="SEO Audit - Quick Check (5 pages, £50)">SEO Audit — Quick Check (5 pages, £50)</option>
-                            <option value="SEO Audit - Full Audit (25 pages, £150)">SEO Audit — Full Audit (25 pages, £150)</option>
-                            <option value="SEO Audit - Audit + Competitor (50 pages, £350)">SEO Audit — Audit + Competitor (50 pages, £350)</option>
-                            <option value="Competitive Intelligence - Snapshot (3 competitors, £150)">Competitive Intelligence — Snapshot (3 competitors, £150)</option>
-                            <option value="Competitive Intelligence - Full Analysis (5 competitors, £350)">Competitive Intelligence — Full Analysis (5 competitors, £350)</option>
-                            <option value="Competitive Intelligence - Strategic (8 competitors, £600)">Competitive Intelligence — Strategic (8 competitors, £600)</option>
+                            <option value="Lead Generation">Lead Generation</option>
+                            <option value="SEO Audit">SEO Audit</option>
+                            <option value="Competitive Intelligence">Competitive Intelligence</option>
                             <option value="Custom / Multiple Services">Custom / Multiple Services</option>
                             <option value="Just a question">Just a question</option>
                         </select>
@@ -308,12 +303,6 @@
         leadFields.style.display = val.includes('lead generation') ? 'block' : 'none';
         seoFields.style.display = val.includes('seo audit') ? 'block' : 'none';
         ciFields.style.display = val.includes('competitive intelligence') ? 'block' : 'none';
-
-        if (val.includes('custom') || val.includes('question')) {
-            leadFields.style.display = 'none';
-            seoFields.style.display = 'none';
-            ciFields.style.display = 'none';
-        }
     });
 
     // Handle form submission via Google Apps Script
@@ -354,15 +343,18 @@
     const serviceParam = params.get('service');
     if (serviceParam) {
         const map = {
-            'leads-starter': 'Lead Generation - Starter (50 leads, £50)',
-            'leads-growth': 'Lead Generation - Growth (200 leads, £150)',
-            'leads-scale': 'Lead Generation - Scale (500 leads, £350)',
-            'seo-quick': 'SEO Audit - Quick Check (5 pages, £50)',
-            'seo-full': 'SEO Audit - Full Audit (25 pages, £150)',
-            'seo-competitor': 'SEO Audit - Audit + Competitor (50 pages, £350)',
-            'ci-snapshot': 'Competitive Intelligence - Snapshot (3 competitors, £150)',
-            'ci-full': 'Competitive Intelligence - Full Analysis (5 competitors, £350)',
-            'ci-strategic': 'Competitive Intelligence - Strategic (8 competitors, £600)',
+            'leads': 'Lead Generation',
+            'leads-starter': 'Lead Generation',
+            'leads-growth': 'Lead Generation',
+            'leads-scale': 'Lead Generation',
+            'seo': 'SEO Audit',
+            'seo-quick': 'SEO Audit',
+            'seo-full': 'SEO Audit',
+            'seo-competitor': 'SEO Audit',
+            'ci': 'Competitive Intelligence',
+            'ci-snapshot': 'Competitive Intelligence',
+            'ci-full': 'Competitive Intelligence',
+            'ci-strategic': 'Competitive Intelligence',
         };
         const val = map[serviceParam];
         if (val) {
