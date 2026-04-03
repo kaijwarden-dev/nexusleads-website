@@ -175,13 +175,7 @@
             </div>
 
             <!-- Form -->
-            <form action="https://formsubmit.co/hello@nexusleads.uk" method="POST" id="contactForm">
-                <!-- Formsubmit config -->
-                <input type="hidden" name="_subject" value="New enquiry from nexusleads.uk">
-                <input type="hidden" name="_captcha" value="true">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_next" value="https://nexusleads.uk/contact?sent=true">
-                <input type="text" name="_honey" style="display:none">
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
 
                 <div class="space-y-6">
                     <!-- Name + Email row -->
@@ -321,6 +315,34 @@
             ciFields.style.display = 'none';
         }
     });
+
+    // Handle form submission via Google Apps Script
+    async function handleSubmit(e) {
+        e.preventDefault();
+        const form = e.target;
+        const btn = document.getElementById('submitBtn');
+        const origText = btn.innerHTML;
+        btn.innerHTML = '<svg class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg> Sending...';
+        btn.disabled = true;
+
+        const data = Object.fromEntries(new FormData(form));
+
+        try {
+            const resp = await fetch('https://script.google.com/macros/s/AKfycbzIJOm1qdHZukTk9BJkvYuLDuoLr0xelVjq0Ty8axcxGSoEBX7aQdr4ocnpEusMcdznGw/exec', {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'text/plain' },
+                body: JSON.stringify(data)
+            });
+            // no-cors means we can't read the response, but if it didn't throw, it sent
+            document.getElementById('formContainer').classList.add('submitted');
+        } catch(err) {
+            alert('Something went wrong. Please email us directly at hello@nexusleads.uk');
+        }
+        btn.innerHTML = origText;
+        btn.disabled = false;
+        return false;
+    }
 
     // Check if redirected back after submission
     if (window.location.search.includes('sent=true')) {
