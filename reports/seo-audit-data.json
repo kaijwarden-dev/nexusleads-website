@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "tool": "Nexus Leads Premium SEO Audit",
+    "version": "2.0",
+    "url": "https://nexusleads.uk",
+    "generated_at": "2026-03-31T06:39:42.007125+00:00",
+    "pages_crawled": 1,
+    "audit_type": "Premium Full Audit + Competitor Comparison"
+  },
+  "executive_summary": {
+    "overall_score": 81,
+    "grade": "B",
+    "summary": "Score: 81/100 (B). 0 critical issues, 1 warnings, 10 checks passed.",
+    "critical_issues": 0,
+    "warnings": 1,
+    "passed": 10,
+    "issues": [],
+    "warnings_list": [
+      "No images"
+    ],
+    "passed_list": [
+      "Title tag",
+      "Meta description",
+      "H1 tag",
+      "H2 structure",
+      "Viewport",
+      "Canonical",
+      "Open Graph",
+      "Twitter Card",
+      "Structured data",
+      "Favicon"
+    ]
+  },
+  "sections": {
+    "on_page_seo": {
+      "score": 67,
+      "max": 100,
+      "checks": [
+        {
+          "item": "Title Tag",
+          "status": "pass",
+          "detail": "'Nexus Leads \u2014 Data-Driven Growth for UK Businesses' (50 chars) \u2014 good length, includes brand + keywords",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "Meta Description",
+          "status": "pass",
+          "detail": "(137 chars) \u2014 compelling and within limits",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "H1 Tag",
+          "status": "pass",
+          "detail": "Single H1: 'The data your\n                UK business needs\n            ' \u2014 good hierarchy",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "H2 Heading Structure",
+          "status": "pass",
+          "detail": "8 H2 tags with clear topic segmentation",
+          "score": 8,
+          "max": 10
+        },
+        {
+          "item": "Images",
+          "status": "warning",
+          "detail": "No images found. Visual content improves engagement and dwell time. Add service icons, screenshots, or team photos.",
+          "score": 3,
+          "max": 10
+        },
+        {
+          "item": "Keyword Optimisation",
+          "status": "pass",
+          "detail": "6/6 target keywords meet frequency targets. Details: 'lead generation': 4x (target: 3), 'seo audit': 8x (target: 3), 'competitive intelligence': 8x (target: 3), 'uk business': 10x (target: 3), 'verified leads': 3x (target: 2), 'nexus leads': 9x (target: 2)",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "Content Length",
+          "status": "pass",
+          "detail": "1583 words. Good depth for a service page.",
+          "score": 8,
+          "max": 10
+        },
+        {
+          "item": "Internal Navigation",
+          "status": "pass",
+          "detail": "22 anchor links for smooth section navigation",
+          "score": 8,
+          "max": 10
+        }
+      ],
+      "max_score": 80
+    },
+    "technical_seo": {
+      "score": 73,
+      "max": 100,
+      "checks": [
+        {
+          "item": "Mobile Viewport",
+          "status": "pass",
+          "detail": "Viewport meta tag present \u2014 mobile-responsive",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "Canonical URL",
+          "status": "pass",
+          "detail": "Canonical tag present",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "Open Graph Tags",
+          "status": "pass",
+          "detail": "6 OG tags found",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "Twitter Card",
+          "status": "pass",
+          "detail": "4 Twitter Card tags",
+          "score": 8,
+          "max": 8
+        },
+        {
+          "item": "Structured Data (JSON-LD)",
+          "status": "pass",
+          "detail": "4 JSON-LD blocks found",
+          "score": 12,
+          "max": 12
+        },
+        {
+          "item": "Favicon",
+          "status": "pass",
+          "detail": "Favicon present",
+          "score": 5,
+          "max": 5
+        },
+        {
+          "item": "Page Size",
+          "status": "pass",
+          "detail": "72.8 KB \u2014 Excellent, fast loading",
+          "score": 10,
+          "max": 10
+        },
+        {
+          "item": "HTTPS/SSL",
+          "status": "info",
+          "detail": "Cannot verify SSL from localhost. Ensure HTTPS is enabled on production hosting with valid certificate.",
+          "score": 0,
+          "max": 10
+        },
+        {
+          "item": "Render-Blocking Resources",
+          "status": "pass",
+          "detail": "1 external CSS, 1 external JS. Minimal \u2014 good.",
+          "score": 8,
+          "max": 10
+        }
+      ],
+      "max_score": 85
+    },
+    "content_quality": {
+      "score": 18,
+      "checks": [
+        {
+          "item": "Readability",
+          "status": "pass",
+          "detail": "Average 9.5 words per sentence. Easy to read.",
+          "score": 8,
+          "max": 10
+        },
+        {
+          "item": "Calls to Action",
+          "status": "pass",
+          "detail": "14 email CTAs found. All link to hello@nexusleads.uk. Consider adding a 'Book a Call' option via Calendly for higher conversion.",
+          "score": 7,
+          "max": 10
+        },
+        {
+          "item": "Social Proof",
+          "status": "warning",
+          "detail": "Limited social proof. Add client testimonials, case study snippets, or 'As seen in' logos to build trust. Even 2-3 testimonials significantly improve conversion rates.",
+          "score": 3,
+          "max": 10
+        }
+      ],
+      "max_score": 30
+    }
+  }
+}
